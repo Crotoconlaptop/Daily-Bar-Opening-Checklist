@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Daily Bar Opening Checklist</h1>
-    <div id="tasks-container">
-        <!-- Aquí se agregarán dinámicamente las tareas -->
+    <div class="div-container">
+        <h1>Daily Bar Opening Checklist</h1>
+        <div id="tasks-container">
+            <!-- Aquí se agregarán dinámicamente las tareas -->
+        </div>
+    
+        <div id="user-section">
+            <label for="userName">Task Executor: </label>
+            <input type="text" id="userName" placeholder="Your Name">
+        </div>
+    
+        <button id="downloadButton">Download Checklist</button>
+    
     </div>
+   
+    <footer>
+        <nav class="app-navbar">
+            <!--<a href="index.html">Home</a>-->
+            <a href="cocktail-app.html">Cocktail App</a>
+            <a href="https://crotoconlaptop.github.io/roomservice/">Room Service App</a>
+            <a href="https://crotoconlaptop.github.io/transfer-app/">Transfer App</a>
+            <!--<a href="https://crotoconlaptop.github.io/Daily-Bar-Opening-Checklist/">Checklist App</a>-->
+        </nav>
 
-    <div id="user-section">
-        <label for="userName">Task Executor: </label>
-        <input type="text" id="userName" placeholder="Your Name">
-    </div>
-
-    <button id="downloadButton">Download Checklist</button>
-
-
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
-

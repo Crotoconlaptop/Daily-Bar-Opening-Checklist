@@ -54,3 +54,71 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    position: fixed; /* Fijar el footer en la parte inferior */
+    bottom: 0;
+}
+
+/* Estilos para el navbar */
+.app-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #333;
+    position: fixed; /* Fijar el navbar en la parte inferior */
+    bottom: 0;
+    left: 0; /* Asegurar que el navbar comience desde el borde izquierdo */
+    right: 0; /* Asegurar que el navbar termine en el borde derecho */
+    z-index: 999;
+}
+
+.app-navbar a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    flex-grow: 1; /* Distribuir el espacio disponible de manera equitativa */
+    text-align: center; /* Centrar el texto en dispositivos móviles */
+}
+
+.app-navbar a:hover {
+    color: #99CC99; /* Cambio de color al pasar el ratón */
+}
+
+.div-container {
+
+    padding-bottom: 100px; /* Ajustar el espacio para el contenido encima del footer */
+    margin-bottom: 10px; /* Ajustar margen inferior para dispositivos móviles */
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustes para el navbar en dispositivos móviles */
+    .app-navbar {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se acomoden en filas */
+        justify-content: space-around; /* Espacio uniforme entre los elementos */
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+    
+    .app-navbar a {
+        margin: 0.5em; /* Espacio alrededor de cada elemento */
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        width: 100%; /* Ocupar todo el ancho disponible */
+        text-align: center; /* Centrar el texto */
+    }
+}
